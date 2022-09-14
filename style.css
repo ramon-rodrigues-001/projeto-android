@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Android;
+    src: url(fonts/idroid.otf) format('opentype');
+}
+@font-face {
+    font-family: titulo;
+    src: url(fonts/aAbsoluteEmpire.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, #84E1AD, #6abf8f);
+    font-weight: bold;
+}
+
+/*=====================Estilo Do Cabeçario [header]====================================*/
+header {
+    background-image: linear-gradient(to bottom, #39cd26dd, rgb(20, 146, 39));
+    box-shadow: inset 2px -1px 20px 3px rgba(0, 0, 0, 0.588);
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    min-height: 100px;
+}
+header h1 {
+    padding-top: 5px;
+    font: normal 1.7em titulo, Arial, Helvetica, sans-serif;
+}
+header p {
+    padding-top: 5px;
+}
+header nav {
+    margin-top: 10px;
+    padding: 7px;
+    text-align: left;
+}
+header nav a {
+    margin-right: 20px;
+    margin: 5px;
+    padding: 4px 9px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+header nav a:hover {
+    background-color: rgba(88, 99, 88, 0.468);
+    transition-duration: .3s;
+}
+header nav a::after {
+    color: rgba(172, 169, 169, 0.687);
+}
+
+/*=====================Estilo Do Corpo [main]================================*/
+main {
+    background-color: black;
+    color: white;
+    margin: 5px auto;
+    padding-bottom: 10px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.402);
+    max-width: 800px;
+}
+main article {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+main a {
+    background-color: #84E1AD;
+    text-decoration: none;
+    color: black;
+    padding: 1px 4px;
+}
+main a::after {
+    content: '🔗';
+}
+main h1 {
+    margin: 10px 0;
+    font-family: Android, Arial, Helvetica, sans-serif;
+    font-size: 1.9em;
+}
+main h2 {
+    margin-bottom: 10px;
+    font-family: Android, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, white, #84E1AD);
+    padding: 0px 5px;
+}
+main p {
+    text-indent: 15px;
+}
+main img {
+    width: 100%;
+}
+main #img-especial {
+    display: block;
+    margin: auto;
+    max-width: 320px;
+}
+.sec-001 {
+    width: 85%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.sec-002 {
+    margin-left: auto;
+    width: 85%;
+}
+.sec-002 h2 {
+    margin-top: 10px;
+    text-align: right;
+}
+main #video {
+    position: relative;
+    background-color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+main iframe {
+    width: 85%;
+    height: 300px;
+}
+
+/*=====================Estilo Do final do corpo [box-final]===========================*/
+#box-final {
+    background-color: #84E1AD;
+    color: black;
+    margin: auto;
+    padding: 0px 7px 7px 7px;
+    border-radius: 10px;
+    font: bolder 1.1em italic;
+    width: 90%;
+}
+#box-final #menu-aside {
+    color: white;
+    background-image: linear-gradient(to bottom, #094e27, #15713d);
+    margin: 0px -7px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.214);
+}
+#box-final #menu-aside h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box-final ul {
+    margin: 10px 3pxpx;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 2;
+}
+#box-final #butoes button {
+    background-color: green;
+    color: white;
+    margin: 4px;
+    border-radius: 15px;
+    width: 26%;
+    height: 30px;
+}
+#box-final #butoes button:hover {
+    background-color: rgba(0, 128, 0, 0.546);
+    box-shadow: inset 1px 1px 8px 1px rgb(5, 113, 17);
+}
+
+/*=====================Estilo Do Roda-pe [footer]================================*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer p {
+    font-size: 1.1em;
+    font-style: italic;
+    padding: 7px;
+}
